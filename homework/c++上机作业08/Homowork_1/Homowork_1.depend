@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1541499950 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homowork_1\clock.cpp
+	"Clock.hpp"
+	<iomanip>
+	<windows.h>
+
+1541500131 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homowork_1\clock.hpp
+	<iostream>
+
+1541500487 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homowork_1\main.cpp
+	"Clock.hpp"
+	"Clock.cpp"
+	"alarm.hpp"
+	"alarm.cpp"
+
+1541499950 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homowork_1\clock.cpp
+	"Clock.hpp"
+	<iomanip>
+	<windows.h>
+
+1541499923 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homowork_1\alarm.hpp
+	"clock.hpp"
+
+1541500664 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homowork_1\alarm.cpp
+	"alarm.hpp"
+	<iostream>
+
+1541500664 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homowork_1\alarm.cpp
+	"alarm.hpp"
+	<iostream>
+
