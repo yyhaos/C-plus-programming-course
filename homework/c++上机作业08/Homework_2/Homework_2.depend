@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1541504134 source:c:\users\administrator\desktop\homework_2\person.cpp
+	"person.hpp"
+	<string>
+
+1541504433 c:\users\administrator\desktop\homework_2\person.hpp
+	<string>
+	<string.h>
+
+1541504649 source:c:\users\administrator\desktop\homework_2\employee.cpp
+	"Employee.hpp"
+	<string>
+
+1541504523 c:\users\administrator\desktop\homework_2\employee.hpp
+	"person.hpp"
+
+1541504652 source:c:\users\administrator\desktop\homework_2\student.cpp
+	"student.hpp"
+
+1541504723 c:\users\administrator\desktop\homework_2\student.hpp
+	"person.hpp"
+
+1541504703 source:c:\users\administrator\desktop\homework_2\main.cpp
+	<string>
+	"employee.hpp"
+	"student.hpp"
+	"studentemployee.hpp"
+	"person.hpp"
+	<iostream>
+
+1541504666 c:\users\administrator\desktop\homework_2\studentemployee.hpp
+	"employee.hpp"
+	"student.hpp"
+
+1541504649 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_2\employee.cpp
+	"Employee.hpp"
+	<string>
+
+1541504523 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_2\employee.hpp
+	"person.hpp"
+
+1541504433 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_2\person.hpp
+	<string>
+	<string.h>
+
+1541504134 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_2\person.cpp
+	"person.hpp"
+	<string>
+
+1541504652 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_2\student.cpp
+	"student.hpp"
+
+1541504723 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_2\student.hpp
+	"person.hpp"
+

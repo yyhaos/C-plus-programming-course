@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1542006034 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_3\mytime.cpp
+	"mytime.h"
+	<iostream>
+
+1542005166 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_3\mytime.h
+
+1542005908 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_3\mydatetime.cpp
+	"mydatetime.h"
+	<string>
+
+1542005941 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_3\mydatetime.h
+	"mydate.h"
+	"mytime.h"
+
+1542008107 c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_3\mydate.h
+
+1542006042 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_3\mydate.cpp
+	"mydate.h"
+	<iostream>
+
+1542006412 source:c:\users\hasee\desktop\c++\第七章派生\201611130126+袁宇昊+上机作业08\homework_3\teatdatetime.cpp
+	"mydatetime.h"
+	<iostream>
+

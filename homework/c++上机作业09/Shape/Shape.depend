@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1542112745 source:c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业09\shape\main.cpp
+	"shape.hpp"
+	"rectangle.hpp"
+	"circle.hpp"
+	"triangle.hpp"
+	<iostream>
+	<string>
+
+1542117149 c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业09\shape\shape.hpp
+	<iostream>
+
+1542117315 c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业09\shape\rectangle.hpp
+	"shape.hpp"
+	"point.hpp"
+	<string>
+	<math.h>
+	<iostream>
+
+1542119352 c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业09\shape\point.hpp
+
+1542116940 c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业09\shape\circle.hpp
+	"shape.hpp"
+	"point.hpp"
+	<string>
+	<iostream>
+
+1542119284 c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业09\shape\triangle.hpp
+	"shape.hpp"
+	"point.hpp"
+	<string>
+	<math.h>
+	<iostream>
+
