@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1543227519 source:c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业10\rmb\main.cpp
+	<iostream>
+	"RMB.hpp"
+
+1543227277 c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业10\rmb\rmb.hpp
+	<iostream>
+	<string>
+	<ostream>
+	<istream>
+
+1543227718 source:c:\users\hasee\desktop\c++\第八章多态\201611130126+袁宇昊+上机作业10\rmb\rmb.cpp
+	"RMB.hpp"
+	<iostream>
+	<istream>
+	<ostream>
+
