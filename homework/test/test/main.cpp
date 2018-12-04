@@ -7,24 +7,24 @@ private:
 public:
 
     A(int xx):x(xx){}
+
     A operator+(const A& b)const
     {
         return A(this->x + b.x);
     }
-    friend ostream& operator<<(ostream& os,A &a);
+    friend ostream& operator<<(ostream& os,  A& a);
 };
 
-ostream& operator<<(ostream& os,A &a)
-{
-    os << a.x;
-    return os;
-}
+ostream& operator<<(ostream& os,  A& a)
+    {
+        os << a.x;
+        return os;
+    }
 int main(void)
 {
-    A objA1(1), objA2(2);
-    //cout<<endl<<"begin"<<endl;
-    cout<<objA1<<objA2<<endl;
-    cout<<objA1+objA2<<endl;
+    A ojbA1(1), objA2(2);
+
+    cout << ojbA1+objA2 << endl;
     cin.get();
     return 0;
 }
