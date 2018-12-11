@@ -23,8 +23,9 @@ ostream& operator<<(ostream& os,  A& a)
 int main(void)
 {
     A ojbA1(1), objA2(2);
-
+    cout << ojbA1<<objA2 << endl;
     cout << ojbA1+objA2 << endl;
+
     cin.get();
     return 0;
 }
