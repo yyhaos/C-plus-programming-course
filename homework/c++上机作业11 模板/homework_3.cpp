@@ -1,18 +1,18 @@
 #include<iostream>
 #include<string.h>
 using namespace std;
-struct Student//Student ½á¹¹ ½è¼ø9.4
+struct Student//Student ç»“æ„ å€Ÿé‰´9.4
 {	int id;
 	float gpa;
-    Student(int Id=0,int Gpa=0):id(Id),gpa(Gpa){}//×î¿ªÊ¼Ã»ÓĞĞ´Ä¬ÈÏ²ÎÊı ±¨´í
+    Student(int Id=0,int Gpa=0):id(Id),gpa(Gpa){}//æœ€å¼€å§‹æ²¡æœ‰å†™é»˜è®¤å‚æ•° æŠ¥é”™
     friend ostream& operator<<(ostream& os,const Student &a);
 };
-ostream& operator<<(ostream& os,const Student &a)//·½±ãtest()º¯ÊıÖÖµÄ cout<<top()
+ostream& operator<<(ostream& os,const Student &a)//æ–¹ä¾¿test()å‡½æ•°ç§çš„ cout<<top()
 {
     os<<"ID:"<<a.id<<" GPA:"<<a.gpa<<" ";
     return os;
 }
-template<class T>//Ä£°åÀàstackÉùÃ÷
+template<class T>//æ¨¡æ¿ç±»stackå£°æ˜
 class stack
 {
 private:
@@ -25,11 +25,11 @@ public:
     stack(stack &a);
     bool empty();
     void push(T a);
-    T pop();//ÓĞÆ«ÌØ»¯º¯Êı string Àà
+    T pop();//æœ‰åç‰¹åŒ–å‡½æ•° string ç±»
     void resize(int new_max);
     int size();
     void show();
-    T operator=(const T &b){//=ÔËËã·ûºÅÖ±½ÓĞ´ÀïÃæÁË ÓĞÆ«ÌØ»¯º¯Êı
+    T operator=(const T &b){//=è¿ç®—ç¬¦å·ç›´æ¥å†™é‡Œé¢äº† æœ‰åç‰¹åŒ–å‡½æ•°
         delete date;
         top=b.top;
         date=new T[b.max_size];
@@ -39,13 +39,13 @@ public:
     }
 };
 
-template<class T>//Ä£°åÀàµÄ¹¹Ôìº¯Êı
+template<class T>//æ¨¡æ¿ç±»çš„æ„é€ å‡½æ•°
 stack<T>::stack():top(-1),max_size(50){
     date=new T[50];
 }
-template<class T>//Ä£°åÀàµÄÎö¹¹º¯Êı
-stack<T>::~stack(){delete date;}//×¢ÒânewµÄ¶ÔÏóÒªdeleteµô
-template<class T>//Ä£°åÀàµÄÒıÓÃ¹¹Ôìº¯Êı
+template<class T>//æ¨¡æ¿ç±»çš„ææ„å‡½æ•°
+stack<T>::~stack(){delete date;}//æ³¨æ„newçš„å¯¹è±¡è¦deleteæ‰
+template<class T>//æ¨¡æ¿ç±»çš„å¼•ç”¨æ„é€ å‡½æ•°
 stack<T>::stack(stack &a)
 {
     date=new T[a.max_size];
@@ -56,27 +56,27 @@ stack<T>::stack(stack &a)
     top=a.top;
     max_size=a.max_size;
 }
-template<class T>//Ä£°åÀàµÄÅĞ¶Ï¿Õº¯Êı
+template<class T>//æ¨¡æ¿ç±»çš„åˆ¤æ–­ç©ºå‡½æ•°
 bool stack<T>::empty()
 {
     if(top<0)
         return true;
     return false;
 }
-template<class T>//Ä£°åÀàµÄÈëÕ¾²Ù×÷
+template<class T>//æ¨¡æ¿ç±»çš„å…¥æ ˆæ“ä½œ
 void stack<T>::push(T a)
 {
     if(top+1>=max_size)
     {
-        resize(max_size+50);//Õ»´óĞ¡²»¹»Òª¼Ó´ó
+        resize(max_size+50);//æ ˆå¤§å°ä¸å¤Ÿè¦åŠ å¤§
     }
     date[top+1]=a;
     top++;
 }
-template<class T>//Ä£°åÀàµÄ¸Ä±äsizeµÄ²Ù×÷
+template<class T>//æ¨¡æ¿ç±»çš„æ”¹å˜sizeçš„æ“ä½œ
 void stack<T>::resize(int new_max)
 {
-    if(new_max<top+1)//Ì«Ğ¡ÁË Òª¼Ó´ó£¨Ò²¿ÉÒÔ±¨´í£©
+    if(new_max<top+1)//å¤ªå°äº† è¦åŠ å¤§ï¼ˆä¹Ÿå¯ä»¥æŠ¥é”™ï¼‰
     {
         new_max=top+1;
     }
@@ -86,7 +86,7 @@ void stack<T>::resize(int new_max)
     date=new T[new_max];
     memcpy(date,tmp,sizeof(T)*(top+1));
 }
-template <class T>//Ä£°åÀàµÄ³öÕ»²Ù×÷
+template <class T>//æ¨¡æ¿ç±»çš„å‡ºæ ˆæ“ä½œ
 T stack<T>::pop()
 {
     if(top<0)
@@ -95,7 +95,7 @@ T stack<T>::pop()
     top--;
     return ans;
 }
-//template <>//Ä£°åÀàµÄ³öÕ»²Ù×÷ stringÌØ»¯
+//template <>//æ¨¡æ¿ç±»çš„å‡ºæ ˆæ“ä½œ stringç‰¹åŒ–
 //string stack<string>::pop()
 //{
 //    if(top<0)
@@ -104,12 +104,12 @@ T stack<T>::pop()
 //    top--;
 //    return ans;
 //}
-template<class T>//Ä£°åÀàµÄ¿´´óĞ¡º¯Êı
+template<class T>//æ¨¡æ¿ç±»çš„çœ‹å¤§å°å‡½æ•°
 int stack<T>::size()
 {
     return top+1;
 }
-template<class T>//Ä£°åÀàµÄshowº¯Êı
+template<class T>//æ¨¡æ¿ç±»çš„showå‡½æ•°
 void stack<T>::show()
 {
     for(int i=0;i<=top;i++)
@@ -117,26 +117,26 @@ void stack<T>::show()
     cout<<endl;
 }
 //operator = (T& a,T b)
-template<class T>//×Ô¼ºµÄtestº¯Êı
+template<class T>//è‡ªå·±çš„testå‡½æ•°
 void test()
 {
     stack<T> a;
     for(int i=100;i<=121;i++)
     {
-        a.push((const T)i);//push ²Ù×÷
+        a.push((const T)i);//push æ“ä½œ
     }
     a.show();
-    cout<<a.pop()<<endl;//pop²Ù×÷
-    a.resize(1999);//ÖØ¶¨Òå´óĞ¡
+    cout<<a.pop()<<endl;//popæ“ä½œ
+    a.resize(1999);//é‡å®šä¹‰å¤§å°
     a.show();
     stack<T> b;
-    b=a;//ÖØĞÂ¸³Öµ²Ù×÷
+    b=a;//é‡æ–°èµ‹å€¼æ“ä½œ
     b.show();
     cout<<endl;
 }
 string Test[5]={"123","234","345","456","567"};
 
-template<>//testº¯Êı stringÌØ»¯
+template<>//testå‡½æ•° stringç‰¹åŒ–
 void test<string>()
 {
     stack<string> a;
@@ -152,7 +152,7 @@ void test<string>()
     cout<<endl;
 }
 Student Test2[5]={Student(1,90),Student(2,95),Student(3,100),Student(4,90),Student(5,95)};
-template<>//StudentÌØ»¯  testº¯Êı
+template<>//Studentç‰¹åŒ–  testå‡½æ•°
 void test<Student>()
 {
     stack<Student> a;
