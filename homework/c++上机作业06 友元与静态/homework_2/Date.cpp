@@ -1,5 +1,6 @@
 #include "Date.hpp"
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
 Date::Date(){};
