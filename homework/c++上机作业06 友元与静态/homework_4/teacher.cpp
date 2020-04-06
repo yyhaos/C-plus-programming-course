@@ -8,7 +8,7 @@ teacher::teacher(string Name)
 }
 void teacher::change_credit(student& a,int Credit)
 {
-    cout<<"教师"<<this->name<<"给学生"<<a.name<<"增加"<<Credit<<"学分，操作成功"<<endl;
+    cout<<"教师"<<name<<"给学生"<<a.name<<"增加"<<Credit<<"学分，操作成功"<<endl;
     a.credit+=Credit;
 }
 void teacher::change_score(student& a,int Score)

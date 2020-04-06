@@ -32,3 +32,36 @@
 	<math.h>
 	<iostream>
 
+1550040225 source:c:\users\hasee\documents\github\c-plus-programming-course\homework\c++上机作业09 多态\shape\main.cpp
+	"shape.hpp"
+	"rectangle.hpp"
+	"circle.hpp"
+	"triangle.hpp"
+	<iostream>
+	<string>
+
+1585924483 c:\users\hasee\documents\github\c-plus-programming-course\homework\c++上机作业09 多态\shape\shape.hpp
+	<iostream>
+
+1550040225 c:\users\hasee\documents\github\c-plus-programming-course\homework\c++上机作业09 多态\shape\rectangle.hpp
+	"shape.hpp"
+	"point.hpp"
+	<string>
+	<math.h>
+	<iostream>
+
+1550040225 c:\users\hasee\documents\github\c-plus-programming-course\homework\c++上机作业09 多态\shape\point.hpp
+
+1550040225 c:\users\hasee\documents\github\c-plus-programming-course\homework\c++上机作业09 多态\shape\circle.hpp
+	"shape.hpp"
+	"point.hpp"
+	<string>
+	<iostream>
+
+1585924479 c:\users\hasee\documents\github\c-plus-programming-course\homework\c++上机作业09 多态\shape\triangle.hpp
+	"shape.hpp"
+	"point.hpp"
+	<string>
+	<math.h>
+	<iostream>
+

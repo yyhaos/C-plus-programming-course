@@ -55,9 +55,11 @@ Person::Person(char * n,int y,int m,int d,char g)
     name=new char[strlen(n)+1];
     strcpy(name,n);
     birthday=Date(y,m,d);
+
     gender=g;
     cout<<"Person类含参量构造函数调用完毕"<<endl;
 }
+
 Person::~Person(void)
 {
     delete name;

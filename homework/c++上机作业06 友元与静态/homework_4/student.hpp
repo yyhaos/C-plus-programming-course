@@ -12,7 +12,7 @@ public:
     string get_name();
     void change_name(string Name);
     Show();
-    //friend void teacher::change_credit(student a,int Credit);
-    //friend void teacher::change_score(student a,int Score);
+//    friend void teacher::change_credit(student a,int Credit);
+//    friend void teacher::change_score(student a,int Score);
     friend class teacher;
 };
